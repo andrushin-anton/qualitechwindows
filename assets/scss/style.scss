@@ -1,0 +1,147 @@
+$pane-width: 400px;
+$sidebar-width: 240px;
+$sidebar-width-sm: 100px;
+$trans-duration: 250ms;
+$trans-timing-function: cubic-bezier(0.7,0,0.3,1);
+
+@mixin color($hue: 100) {
+  background: hsla($hue, 90, 50, .9);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: flex;
+  padding-left: $sidebar-width-sm;
+  @media (min-width: 600px) {
+    padding-left: $sidebar-width;
+  }
+  
+  color: #2f2f2f;
+}
+
+.container {
+  //@include color;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sidebar {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  height: 100%;
+  @include color(200);
+  width: 100px;
+  padding: .25rem;
+  background: linear-gradient(to bottom, #ffa84c 0%,#ff7b0d 100%);
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0,0,0,.3);
+  @media (min-width: 600px) {
+    width: $sidebar-width;
+    padding: 2rem;
+  }
+}
+
+
+
+.main {
+  background: #f3f3f3;
+  position: absolute;
+  z-index: 950;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  margin: 0;
+  transition: $trans-duration $trans-timing-function all;
+  transition-delay: 0;
+  min-height: 100%;
+  transform: translateX(0);
+}
+
+.main--content {
+  overflow: auto;
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+}
+
+%pane {
+  position: absolute;
+  padding: 2rem;
+  width: $pane-width; 
+  z-index: 980;
+  top: 0;
+  bottom: 0;
+  background: hsla(1200, 50, 80, 1);
+  transition: transform $trans-duration $trans-timing-function;
+  transition-delay: 0;
+}
+
+.pane--right,
+.pane--left { @extend %pane; }
+
+.pane--right {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.pane--left {
+  left: -$pane-width;
+}
+
+.show-pane--left {
+  .main { transform: translateX($pane-width); }
+}
+
+.show-pane--right {
+  .pane--right { transform: translateX(0);}
+  .main { right: $pane-width; }
+}
+
+.overpane {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsla(280, 50, 60, .9);
+  padding: 2rem;
+  z-index: 2000;
+  transition: $trans-duration $trans-timing-function transform;
+  transform: translateY(100%);
+  &.show {
+     transform: translateY(0);
+  }
+}
+
+button {
+  margin: .5rem 0;
+  width: 100%;
+  background: hsla(210, 90, 50, 1);
+  border: none;
+  padding: .5rem 0;
+  color: #fff;
+  &.big-button {
+    padding: 2rem 0;
+  }
+  &:focus {
+    outline: none;
+    background: hsla(210, 90, 45, 1);
+  }
+  &:active {
+    
+    background: hsla(210, 90, 40, 1);
+  }
+}

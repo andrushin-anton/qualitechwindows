@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="11px" height="6px" viewBox="0 0 11 6" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.1 (35376) - http://www.bohemiancoding.com/sketch -->
+    <title>down copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Quick-Bill" transform="translate(-675.000000, -274.000000)" fill="#484C51">
+            <g id="Infinite-Panel" transform="translate(355.000000, 158.000000)">
+                <g id="Sort-by" transform="translate(269.000000, 110.000000)">
+                    <g id="icon_arrow_down_fat" transform="translate(51.000000, 6.000000)">
+                        <path d="M5.40614768,4.63938728 L0.922444366,0.155683962 C0.717269808,-0.0494905959 0.370073444,-0.0545506419 0.159050175,0.156472626 C-0.0458015761,0.361324378 -0.0523261898,0.709279116 0.158261511,0.919866817 L4.841306,5.60291131 C4.86568063,5.68827545 4.91084543,5.7681819 4.97619067,5.83352714 C5.09339194,5.95072841 5.25259764,6.00127584 5.40614768,5.9879052 C5.55969772,6.00127584 5.71890343,5.95072841 5.83610469,5.83352714 C5.90144994,5.7681819 5.94661474,5.68827545 5.97098936,5.60291131 L10.6540339,0.919866817 C10.8646216,0.709279116 10.8580969,0.361324378 10.6532452,0.156472626 C10.4422219,-0.0545506419 10.0950256,-0.0494905959 9.889851,0.155683962 L5.40614768,4.63938728 Z" id="down-copy" transform="translate(5.406148, 2.995000) scale(1, -1) rotate(-180.000000) translate(-5.406148, -2.995000) "></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
