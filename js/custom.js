@@ -464,9 +464,10 @@ function validateAppointment() {
         errors += 'Please provide an email address.';
     } else if (checkcontact(app_email_address.value) == false) {
         errors += 'Please provide a valid email address.';
-    } else if (app_date.value == "") {
-        errors += 'Please select an appointment date.';
     }
+    //else if (app_date.value == "") {
+    //    errors += 'Please select an appointment date.';
+    // }
 
 
     if (errors) {
@@ -484,7 +485,7 @@ function validateAppointment() {
                     document.getElementById("error").style.display = "none";
                     document.getElementById("input-29").value = "";
                     document.getElementById("input-30").value = "";
-                    document.getElementById("datepicker").value = "";
+                    //document.getElementById("datepicker").value = "";
                     document.getElementById("input-31").value = "";
                     document.getElementById("textarea").value = "";
                     $("#appointment_form").hide();

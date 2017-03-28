@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['input-29']) != ""){
-			$to = "abc@gmail.com";
+			$to = "9142045@gmail.com";
 			$from =  $_POST["input-30"];
 			$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["input-29"]."<br />";
 			$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["input-30"]."<br />";
@@ -27,7 +27,7 @@ if(isset($_POST['input-29']) != ""){
 }
 
 if(isset($_POST['contact_name']) != ""){
-			$to = "abc@gmail.com";
+			$to = "9142045@gmail.com";
 			$from =  $_POST["contact_email"];
 			$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["contact_name"]."<br />";
 			$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["contact_email"]."<br />";
@@ -54,7 +54,7 @@ if(isset($_POST['contact_name']) != ""){
 
 
 if(isset($_POST['subscribe_name']) != ""){
-			$to = "abc@gmail.com";
+			$to = "9142045@gmail.com";
 			$from =  $_POST["subscribe_email"];
 			$message = "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Name: </strong>".$_POST["subscribe_name"]."<br />";
 			$message .= "&nbsp;&nbsp;&nbsp;&nbsp;<strong>Email Address: </strong>".$_POST["subscribe_email"]."<br />";
