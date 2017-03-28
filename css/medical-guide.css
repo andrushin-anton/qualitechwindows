@@ -308,7 +308,8 @@ img:hover {
     color: #333;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
-    padding: 12px 12px !important;
+    padding: 12px 16px !important;
+    font-weight: 600;
 }
 
 .header .nav li.parent:hover a {
